@@ -33,6 +33,8 @@ class working_hoursTests: XCTestCase {
     func testAddHour() throws {
         let test = AddHours()
         let adder = AddHours()
+        let strin = "p"
+        strin.customPlaygroundQuickLook
         XCTAssert(adder.add("1234"))
     }
 }
