@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='working_hoursTests.xctest' tests='3' failures='0'>
+  <testsuite name='working_hoursTests.working_hoursTests' tests='3' failures='0'>
+    <testcase classname='working_hoursTests.working_hoursTests' name='testAddHour' time='0.002'/>
+    <testcase classname='working_hoursTests.working_hoursTests' name='testExample' time='0.001'/>
+    <testcase classname='working_hoursTests.working_hoursTests' name='testPerformanceExample' time='0.323'/>
+  </testsuite>
+</testsuites>
