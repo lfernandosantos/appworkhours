@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-	label 'iOS'
-	}
+    agent any
 
     stages {
         stage('Build') {
@@ -11,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'bundle exec fastlane scan'
+                sh 'fastlane scan'
             }
         }
 
