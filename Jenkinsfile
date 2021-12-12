@@ -6,7 +6,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		sh 'bundle exec install fastlane'
 		sh 'bundle exec fastlane gym'
             }
         }
