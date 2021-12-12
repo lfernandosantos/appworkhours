@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-		sh 'bundle exec install fastlane'
-                sh 'fastlane scan'
+                sh 'bundle exec fastlane scan'
             }
         }
 
