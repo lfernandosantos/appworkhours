@@ -11,8 +11,9 @@ pipeline {
         stage('Test') {
             steps {
 		    script {
-			    sh 'fastlane scan'
 			    sh 'fastlane sigh -o "~/Certificates/'
+			    sh 'fastlane scan'
+			    
 		    }
             }
         }
