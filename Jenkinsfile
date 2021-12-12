@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             steps {
 		    script {
-			    sh 'bundle exec fastlane scan'
+			    sh 'fastlane scan'
 		    }
             }
         }
