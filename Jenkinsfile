@@ -13,6 +13,7 @@ pipeline {
 		    script {
 			    sh 'bundle exec install fastlane'
 			    sh 'fastlane scan'
+			    sh 'fastlane sigh -o "~/Certificates/'
 		    }
             }
         }
