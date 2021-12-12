@@ -1,18 +1,19 @@
 pipeline {
-	agent {
-		label 'iOS'
+	agent any
+	
+	environment {
+		LC_ALL = 'en_US.UTF-8'
+		LANG = 'en_US.UTF-8'
+		PATH = "/usr/local/otp/ruby@2.7/bin:/usr/local/bin:$PATH"
 	}
 
     stages {
-        stage('Build') {
-            steps {
-		sh 'bundle exec install fastlane'
-		sh 'bundle exec fastlane gym'
-            }
-        }
         stage('Test') {
             steps {
-                sh 'fastlane scan'
+		    script {
+			    sh 'bundle exec install fastlane'
+			    sh 'fastlane scan'
+		    }
             }
         }
 
